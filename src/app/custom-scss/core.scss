@@ -1,0 +1,68 @@
+:root {
+    --font-primary-color: #272727;
+    --font-secondary-color: #594bd0;
+    --font-secondary-hover-color: #3629a7;
+    --font-family: serif, sans-serif, system-ui;
+    --font-family-heading: "Alegreya Sans";
+    --background-color: #fbfbfb;
+    --secondary-background-color: #f1f1f1;
+}
+
+body {
+    min-height: 100vh;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: var(--font-primary-color);
+    background-color: var(--background-color);
+    font-family: var(--font-family);
+}
+
+.app-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.material-icons,
+.material-icons-outlined {
+    vertical-align: bottom;
+}
+
+.modal-content {
+    background-color: var(--background-color);
+}
+
+.btn {
+    border-radius: 1.25rem;
+
+    &.btn-primary {
+        background-color: var(--font-secondary-color);
+        border-color: var(--font-secondary-color);
+
+        &:hover {
+            background-color: var(--font-secondary-hover-color);
+            border-color: var(--font-secondary-hover-color);
+        }
+
+        &:focus {
+            box-shadow: 0 0 0 0.25rem rgb(217 213 255);
+        }
+    }
+
+    &.btn-outline-primary {
+        border-color: var(--font-secondary-color);
+        color: var(--font-secondary-color);
+
+        &:hover {
+            background-color: var(--font-secondary-hover-color);
+            border-color: var(--font-secondary-hover-color);
+            color: #fff;
+        }
+
+        &:focus {
+            box-shadow: 0 0 0 0.25rem rgb(217 213 255);
+        }
+    }
+}

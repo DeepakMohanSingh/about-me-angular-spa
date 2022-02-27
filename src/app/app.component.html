@@ -1,0 +1,724 @@
+<div class="container-fluid app-wrapper">
+  <div class="hero">
+    <div class="row vh-100">
+      <div class="col-md-6 hero-text-wrapper">
+        <div class="primary-text-wrapper">
+          <div class="display-6">
+            Hey👋🏻, I am Deepak Singh, developer with 2+ years of experience.
+          </div>
+        </div>
+        <div class="hero-button-wrapper">
+          <button class="btn btn-primary" (click)="downloadResume()">
+            <i class="material-icons">file_download</i> Download CV
+          </button>
+          <button class="btn btn-outline-primary" (click)="contentView()">
+            <i class="material-icons">view_in_ar</i> Explore
+          </button>
+        </div>
+      </div>
+      <div class="col-md-6 hero-image-wrapper">
+        <div class="image-container">
+          <div class="connect-1" (click)="openLink('https://www.linkedin.com/in/deepakmohansingh/')">
+            <img src="assets/linkedin.png" class="img-fluid" />
+            DeepakMohanSingh
+          </div>
+          <img src="assets/memoji.png" class="img-fluid" />
+          <div class="connect-2" (click)="openLink('https://twitter.com/ImDeepakMohan')">
+            <img src="assets/twitter.png" class="img-fluid" />
+            ImDeepakMohan
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="contents">
+  <div class="education-content" #educationContent id="smooth-scroll-view">
+    <div class="container-fluid position-relative">
+      <div class="wave-top">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+          <path
+            d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+            class="shape-fill"></path>
+        </svg>
+      </div>
+      <div class="row content-header-wrapper">
+        <div class="col-md-6 content-header-text-wrapper" [@fade]="animateEducationContent">
+          <div class="display-1 content-header-text">
+            Educational qualification
+          </div>
+        </div>
+        <div class=" col-md-6 content-header-image-wrapper" [@fade]="animateEducationContent">
+          <img src="assets/books.png" />
+        </div>
+      </div>
+      <div class="row mb-5">
+        <div class="col-md-4 mb-3">
+          <div class="card">
+            <div class="social-media-user">
+              <div class="profile-picture">
+                <img class="img-fluid" src="assets/profile-picture.png" />
+              </div>
+              <div class="user-details">
+                <div>
+                  deepak_singh
+                </div>
+                <div>
+                  April, 2014
+                </div>
+              </div>
+              <div class="options-mock">
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+            </div>
+            <div class="card-image">
+              <img class="img-fluid" src="assets/child.png" alt="HSC">
+              <div class="likes">
+                ❤️ 🔥 👏
+              </div>
+            </div>
+            <div class="card-body">
+              <div class="card-text">
+                <div>Reacted by <span>497</span> followers</div>
+                <span>deepak_singh</span> I completed my Class 10 at <span>Nirmala matha convent
+                  matriculation higher secondary school</span> with a percentage of <span>94%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-3">
+          <div class="card">
+            <div class="social-media-user">
+              <div class="profile-picture">
+                <img class="img-fluid" src="assets/profile-picture.png" />
+              </div>
+              <div class="user-details">
+                <div>
+                  deepak_singh
+                </div>
+                <div>
+                  June, 2016
+                </div>
+              </div>
+              <div class="options-mock">
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+            </div>
+            <div class="card-image">
+              <img class="img-fluid" src="assets/teen.png" alt="HSC">
+              <div class="likes">
+                ❤️ 🔥 👏
+              </div>
+            </div>
+            <div class="card-body">
+              <div class="card-text">
+                <div>Reacted by <span>1923</span> followers</div>
+                <span>deepak_singh</span> I completed my Class 12 at <span>R.K.Sree Rangammal higher secondary
+                  school</span> with a percentage of <span>90%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-3">
+          <div class="card">
+            <div class="social-media-user">
+              <div class="profile-picture">
+                <img class="img-fluid" src="assets/profile-picture.png" />
+              </div>
+              <div class="user-details">
+                <div>
+                  deepak_singh
+                </div>
+                <div>
+                  August, 2020
+                </div>
+              </div>
+              <div class="options-mock">
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+            </div>
+            <div class="card-image">
+              <img class="img-fluid" src="assets/man.png" alt="HSC">
+              <div class="likes">
+                ❤️ 🔥 👏
+              </div>
+            </div>
+            <div class="card-body">
+              <div class="card-text">
+                <div>Reacted by <span>5471</span> followers</div>
+                <span>deepak_singh</span> I completed my Bachelor of Engineering in Computer Science at <span>Sri Eshwar
+                  college of Engineering</span> with a percentage of <span>75%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="experience-content" #experienceContent>
+    <div class="container-fluid position-relative">
+      <div class="wave-top">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+          <path
+            d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+            class="shape-fill"></path>
+        </svg>
+      </div>
+      <div class="row content-header-wrapper">
+        <div class="col-md-6 content-header-text-wrapper" [@fade]="animateExperienceContent">
+          <div class="display-1 content-header-text">
+            Work experience
+          </div>
+        </div>
+        <div class=" col-md-6 content-header-image-wrapper" [@fade]="animateExperienceContent">
+          <img src="assets/work-experience.png" />
+        </div>
+      </div>
+      <div class="row mb-5">
+        <div class="col-md-12 mb-3">
+          <div class="card">
+            <div class="social-media-user">
+              <div class="profile-picture">
+                <img class="img-fluid" src="assets/profile-picture.png" />
+              </div>
+              <div class="user-details">
+                <div>
+                  Deepak Singh
+                </div>
+                <div>
+                  Feb, 2020
+                </div>
+              </div>
+              <div class="options-mock">
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+            </div>
+            <div class="card-body">
+              <div class="card-text">
+                <div>Got my first internship oppurtunity post education at <span>embedUR Systems</span> as "Project
+                  Intern". Feeling excited :)</div>
+                <div class="linkedin-likes">
+                  <div>👍🏻</div>
+                  <div>❤️</div>
+                  <div class="count">24</div>
+                </div>
+                <div class="row linkedin-options">
+                  <div class="col-auto"><i class="material-icons-outlined">thumb_up</i> Like</div>
+                  <div class="col-auto"><i class="material-icons-outlined">comment</i> Comment</div>
+                  <div class="col-auto"><i class="material-icons-outlined">share</i> Share</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-12 mb-3">
+          <div class="card">
+            <div class="social-media-user">
+              <div class="profile-picture">
+                <img class="img-fluid" src="assets/profile-picture.png" />
+              </div>
+              <div class="user-details">
+                <div>
+                  Deepak Singh
+                </div>
+                <div>
+                  June, 2020
+                </div>
+              </div>
+              <div class="options-mock">
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+            </div>
+            <div class="card-body">
+              <div class="card-text">
+                <div>Yet another internship oppurtunity! Got selected as "Software Engineer Intern" at
+                  <span>Kovai.co</span>.
+                </div>
+                <div class="linkedin-likes">
+                  <div>👍🏻</div>
+                  <div>❤️</div>
+                  <div class="count">46</div>
+                </div>
+                <div class="row linkedin-options">
+                  <div class="col-auto"><i class="material-icons-outlined">thumb_up</i> Like</div>
+                  <div class="col-auto"><i class="material-icons-outlined">comment</i> Comment</div>
+                  <div class="col-auto"><i class="material-icons-outlined">share</i> Share</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-12 mb-3">
+          <div class="card">
+            <div class="social-media-user">
+              <div class="profile-picture">
+                <img class="img-fluid" src="assets/profile-picture.png" />
+              </div>
+              <div class="user-details">
+                <div>
+                  Deepak Singh
+                </div>
+                <div>
+                  Jan, 2021
+                </div>
+              </div>
+              <div class="options-mock">
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+            </div>
+            <div class="card-body">
+              <div class="card-text">
+                <div>Starting a new position as "Software Engineer" at
+                  <span>Kovai.co</span> :)
+                </div>
+                <div class="text-center">
+                  <img src="assets/linkedin gif.gif" class="img-fluid" />
+                  <div class="linkedin-new-pos">
+                    Starting a new position
+                  </div>
+                </div>
+                <div class="linkedin-likes">
+                  <div>❤️</div>
+                  <div>👏</div>
+                  <div class="count">120</div>
+                </div>
+                <div class="row linkedin-options">
+                  <div class="col-auto"><i class="material-icons-outlined">thumb_up</i> Like</div>
+                  <div class="col-auto"><i class="material-icons-outlined">comment</i> Comment</div>
+                  <div class="col-auto"><i class="material-icons-outlined">share</i> Share</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="skills-content" #skillsContent>
+    <div class="container-fluid position-relative">
+      <div class="wave-top">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+          <path
+            d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+            class="shape-fill"></path>
+        </svg>
+      </div>
+      <div class="row content-header-wrapper">
+        <div class="col-md-6 content-header-text-wrapper" [@fade]="animateSkillsContent">
+          <div class="display-1 content-header-text">
+            Skills
+          </div>
+        </div>
+        <div class=" col-md-6 content-header-image-wrapper" [@fade]="animateSkillsContent">
+          <img src="assets/skills.png" />
+        </div>
+      </div>
+      <div class="row mb-5">
+        <div class="col-md-12 text-center mb-3">
+          <img src="assets/code.gif" class="code img-fluid" />
+        </div>
+      </div>
+      <div class="row align-items-center mb-5">
+        <div class="col-md-6 mb-3">
+          <div class="card">
+            <div class="card-body">
+              <div class="card-text">
+                <div class="skill-header-icon">
+                  <i class="material-icons-outlined">code</i>
+                </div>
+                <div class="skill-heading">
+                  Programming languages
+                </div>
+                <div class="skill-body">
+                  <div><i class="material-icons-outlined">task_alt</i> C</div>
+                  <div><i class="material-icons-outlined">task_alt</i> C++</div>
+                  <div><i class="material-icons-outlined">task_alt</i> C#</div>
+                  <div><i class="material-icons-outlined">task_alt</i> Java</div>
+                  <div><i class="material-icons-outlined">task_alt</i> Python</div>
+                  <div><i class="material-icons-outlined">task_alt</i> PHP</div>
+                  <div><i class="material-icons-outlined">task_alt</i> JavaScript</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 mb-3">
+          <div class="card">
+            <div class="card-body">
+              <div class="card-text">
+                <div class="skill-header-icon">
+                  <i class="material-icons-outlined">psychology</i>
+                </div>
+                <div class="skill-heading">
+                  Tools & Technologies
+                </div>
+                <div class="skill-body">
+                  <div><i class="material-icons-outlined">task_alt</i> Microsoft Azure</div>
+                  <div><i class="material-icons-outlined">task_alt</i> Git</div>
+                  <div><i class="material-icons-outlined">task_alt</i> Angular</div>
+                  <div><i class="material-icons-outlined">task_alt</i> Visual Studio</div>
+                  <div><i class="material-icons-outlined">task_alt</i> Visual Studio Code</div>
+                  <div><i class="material-icons-outlined">task_alt</i> SQL Server</div>
+                  <div><i class="material-icons-outlined">task_alt</i> XAMPP</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="achievements-content" #achievementsContent>
+    <div class="container-fluid position-relative">
+      <div class="wave-top">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+          <path
+            d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+            class="shape-fill"></path>
+        </svg>
+      </div>
+      <div class="row content-header-wrapper">
+        <div class="col-md-6 content-header-text-wrapper" [@fade]="animateAchievementsContent">
+          <div class="display-1 content-header-text">
+            Achievements
+          </div>
+        </div>
+        <div class=" col-md-6 content-header-image-wrapper" [@fade]="animateAchievementsContent">
+          <img src="assets/cup.png" />
+        </div>
+      </div>
+      <div class="row mb-5">
+        <div class="col-md-12 text-center">
+          <div class="display-1 award-rich-content">
+            Awwwards.
+          </div>
+          <div class="h3">
+            Yes, I managed to get a few.
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-center mb-5">
+        <div class="col-md-3 mb-3">
+          <div class="card">
+            <div class="award-image">
+              <img src="assets/award.png" class="img-fluid" />
+            </div>
+            <div class="card-body">
+              <div class="card-text">
+                <div class="card-text-heading">Project Expo winner</div>
+                <div>
+                  For three consecutive years at my university
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 mb-3">
+          <div class="card">
+            <div class="award-image">
+              <img src="assets/award.png" class="img-fluid" />
+            </div>
+            <div class="card-body">
+              <div class="card-text">
+                <div class="card-text-heading">Presentation winner</div>
+                <div>
+                  At several technical fests of various universities
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 mb-3">
+          <div class="card">
+            <div class="award-image">
+              <img src="assets/award.png" class="img-fluid" />
+            </div>
+            <div class="card-body">
+              <div class="card-text">
+                <div class="card-text-heading">"Honorable mention" award</div>
+                <div>
+                  At Zoho's bot building context
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="contact-content" #contactContent>
+    <div class="container-fluid position-relative">
+      <div class="wave-top">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+          <path
+            d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+            class="shape-fill"></path>
+        </svg>
+      </div>
+      <div class="row content-header-wrapper mb-5">
+        <div class="col-md-6 content-header-text-wrapper" [@fade]="animateContactContent">
+          <div class="display-1 content-header-text">
+            Let's talk!
+          </div>
+        </div>
+        <div class=" col-md-6 content-header-image-wrapper" [@fade]="animateContactContent">
+          <img src="assets/child.png" />
+        </div>
+      </div>
+      <div class="row mb-5 align-items-center justify-content-center">
+        <div class="col-md-6 text-center p-5">
+          <div class="card">
+            <div class="contact-image">
+              <img src="assets/memoji.png" class="img-fluid" />
+            </div>
+            <div class="card-body">
+              <div class="card-text">
+                <div class="card-text-heading">Deepak Singh</div>
+                <div class="card-text-body">
+                  Thanks for visiting my website. As I always believe, "Be how you think your leader should be", the
+                  first thing stands out from the rest is how you help people out amidst grinding your success. Let's
+                  build great things together. Connect with me on LinkedIn and
+                  Twitter.
+                  <div class="card-text-icons row align-items-center justify-content-center mt-5">
+                    <div class="col-auto icon-container"
+                      (click)="openLink('https://www.linkedin.com/in/deepakmohansingh/')">
+                      <img src="assets/linkedin.png" />
+                    </div>
+                    <div class="col-auto icon-container"
+                      (click)="openLink('https://twitter.com/ImDeepakMohan')">
+                      <img src="assets/twitter.png" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="col-md-6 p-5">
+          <div class="contact-me-heading">
+            Write to me.
+          </div>
+          <div class="contact-me-body">
+            <form action="mailto:p.s.vishalsingh@gmail.com" enctype="text/plain">
+              <div class="form-group">
+                <div class="mb-3">
+                  <input type="email" placeholder="Your email address" class="form-control" />
+                </div>
+                <div class="mb-3">
+                  <textarea rows="4" placeholder="Your message" class="form-control"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">
+                  Send <i class="material-icons">send</i>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div> -->
+      </div>
+    </div>
+  </div>
+
+  <div class="text-center">
+    Illustrations by <a target="_blank" href="https://icons8.com/illustrations">Icons 8</a>
+  </div>
+</div>
+
+<!-- <ng-template #content let-modal>
+  <div class="modal-header">
+    <span class="modal-close-button" aria-label="Close" (click)="modal.dismiss('Cross click'); viewIndex = -1;">
+      <i class="material-icons">close</i>
+    </span>
+  </div>
+  <div *ngIf="viewIndex == 0" class="modal-body education-content">
+    <div class="container-fluid position-relative">
+      <div class="wave-top">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+          <path
+            d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+            class="shape-fill"></path>
+        </svg>
+      </div>
+      <div class="row content-header-wrapper">
+        <div class="col-md-6 content-header-text-wrapper">
+          Educational qualification
+        </div>
+        <div class=" col-md-6 content-header-image-wrapper">
+          <img src="assets/books.png" />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4 mb-3">
+          <div class="card">
+            <div class="social-media-user">
+              <div class="profile-picture">
+                <img class="img-fluid" src="assets/profile-picture.png" />
+              </div>
+              <div class="user-details">
+                <div>
+                  deepak_singh
+                </div>
+                <div>
+                  April, 2014
+                </div>
+              </div>
+              <div class="options-mock">
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+            </div>
+            <div class="card-image">
+              <img class="img-fluid" src="assets/child.png" alt="HSC">
+              <div class="likes">
+                ❤️ 🔥 👏
+              </div>
+            </div>
+            <div class="card-body">
+              <div class="card-text">
+                <div>Reacted by <span>497</span> followers</div>
+                <span>deepak_singh</span> I completed my Class 10 at <span>Nirmala matha convent
+                  matriculation higher secondary school</span> with a percentage of <span>94%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-3">
+          <div class="card">
+            <div class="social-media-user">
+              <div class="profile-picture">
+                <img class="img-fluid" src="assets/profile-picture.png" />
+              </div>
+              <div class="user-details">
+                <div>
+                  deepak_singh
+                </div>
+                <div>
+                  June, 2016
+                </div>
+              </div>
+              <div class="options-mock">
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+            </div>
+            <div class="card-image">
+              <img class="img-fluid" src="assets/teen.png" alt="HSC">
+              <div class="likes">
+                ❤️ 🔥 👏
+              </div>
+            </div>
+            <div class="card-body">
+              <div class="card-text">
+                <div>Reacted by <span>1923</span> followers</div>
+                <span>deepak_singh</span> I completed my Class 12 at <span>R.K.Sree Rangammal higher secondary
+                  school</span> with a percentage of <span>90%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-3">
+          <div class="card">
+            <div class="social-media-user">
+              <div class="profile-picture">
+                <img class="img-fluid" src="assets/profile-picture.png" />
+              </div>
+              <div class="user-details">
+                <div>
+                  deepak_singh
+                </div>
+                <div>
+                  August, 2020
+                </div>
+              </div>
+              <div class="options-mock">
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+            </div>
+            <div class="card-image">
+              <img class="img-fluid" src="assets/man.png" alt="HSC">
+              <div class="likes">
+                ❤️ 🔥 👏
+              </div>
+            </div>
+            <div class="card-body">
+              <div class="card-text">
+                <div>Reacted by <span>5471</span> followers</div>
+                <span>deepak_singh</span> I completed my Bachelor of Engineering in Computer Science at <span>Sri Eshwar
+                  college of Engineering</span> with a percentage of <span>75%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div *ngIf="viewIndex == 1" class="modal-body education-content">
+    <div class="row">
+      <div class="col-sm-4">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">HSC</h5>
+            <p class="card-text">Nirmala matha convent matriculation higher secondary school</p>
+            <div>
+              Percentage: <span>94%</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">SSLC</h5>
+            <p class="card-text">R.K.S higher secondary school</p>
+            <div>
+              Percentage: <span>90%</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Bachelor of Engineering</h5>
+            <p class="card-text">Sri Eshwar college of Engineering</p>
+            <div>
+              Percentage: <span>75%</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal-footer">
+    <i class="material-icons" [class.disabled]="viewIndex == 0"
+      (click)="changeContent(-1)">keyboard_double_arrow_left</i>
+    <span (click)="viewIndex = 0" [class.highlight]="viewIndex == 0"></span>
+    <span (click)="viewIndex = 1" [class.highlight]="viewIndex == 1"></span>
+    <span (click)="viewIndex = 2" [class.highlight]="viewIndex == 2"></span>
+    <span (click)="viewIndex = 3" [class.highlight]="viewIndex == 3"></span>
+    <span (click)="viewIndex = 4" [class.highlight]="viewIndex == 4"></span>
+    <span (click)="viewIndex = 5" [class.highlight]="viewIndex == 5"></span>
+    <i class="material-icons" [class.disabled]="viewIndex == 5"
+      (click)="changeContent(1)">keyboard_double_arrow_right</i>
+  </div>
+</ng-template> -->
