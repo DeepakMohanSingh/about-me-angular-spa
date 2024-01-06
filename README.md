@@ -1,10 +1,10 @@
-# "About me"
+## What?
 
-This simple Angular application acts as a portfolio site.
+This simple Angular application acts as a portfolio site. This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.2.0. 
 
-## Motivation
+## Why?
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.2.0. This was created as a hands-on project to deepen my understanding of Angular, HTML, and CSS.
+This was created as a hands-on project to deepen my understanding of Angular, HTML, and CSS.
 
 ## Live
 
